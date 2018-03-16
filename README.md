@@ -112,7 +112,8 @@ Another way of reducing false
 def apply_threshold(heatmap, threshold):
     if len(heatmap) > 0 :
         heatmap[heatmap <= threshold] = 0
-    return heatmap```
+    return heatmap
+```
 
 
 Thresholding helps in removing false positives by removing those hot encoded pixels where intensity is less than a configured value which is **1** in my case. This translates to removing predictions done only by 1 of the window by assuming less probability of its being an valid prediction.
