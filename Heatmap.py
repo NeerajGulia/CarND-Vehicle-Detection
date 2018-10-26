@@ -1,5 +1,6 @@
 import numpy as np
-class Heatmap:    
+class Heatmap:
+    """ Class to generate the Heatmp """
     def __init__(self, threshold):
         self.__heatMapList = []
         self.__threshold = threshold
